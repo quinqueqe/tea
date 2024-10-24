@@ -1,6 +1,14 @@
 .prioritise {
 	padding: 150px 0;
 
+	@media (max-width: 768px) {
+		padding: 80px 0;
+	}
+
+	@media (max-width: 480px) {
+		padding: 60px 0;
+	}
+
 	h1 {
 		font-family: var(--second-family);
 		font-weight: 400;
@@ -8,11 +16,33 @@
 		padding-bottom: 60px;
 		text-align: center;
 
+		@media (max-width: 768px) {
+			padding-bottom: 50px;
+			font-size: 30px;
+		}
+
+		@media (max-width: 480px) {
+			padding-bottom: 40px;
+		}
+
 	}
 
 	ul {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 60px;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+
+		@media (max-width: 480px) {
+			gap: 30px;
+		}
 
 		li {
 			display: flex;
@@ -26,6 +56,10 @@
 				font-size: 30px;
 				padding-bottom: 10px;
 
+				@media (max-width: 768px) {
+			font-size: 25px;
+				}
+
 			}
 
 			p {
@@ -33,6 +67,10 @@
 				font-weight: 600;
 				font-size: 20px;
 				padding-bottom: 40px;
+				@media (max-width: 768px) {
+					padding-bottom: 10px;
+					font-size: 15px;
+				}
 
 			}
 

@@ -1,20 +1,39 @@
 .collections {
 	padding-bottom: 150px;
 
+	@media (max-width: 768px) {
+		padding-bottom: 80px;
+	}
+
+	@media (max-width: 480px) {
+		padding-bottom: 60px;
+	}
+
 	h1 {
 		text-align: center;
 		font-family: var(--second-family);
 		font-weight: 400;
 		font-size: 40px;
 		padding-bottom: 60px;
+
+		@media (max-width: 768px) {
+			padding-bottom: 30px;
+			font-size: 30px;
+		}
 	}
 
 	ul {
 		display: flex;
-		gap: 40px;
+		gap: 30px;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		flex-wrap: wrap;
+
+		@media (max-width: 480px) {
+			gap: 20px;
+		}
+
 
 		li {
 
@@ -23,6 +42,10 @@
 				font-weight: 400;
 				font-size: 24px;
 				padding-top: 10px;
+
+				@media (max-width: 768px) {
+					padding-top: 0;
+				}
 			}
 		}
 	}

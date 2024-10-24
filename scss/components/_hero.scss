@@ -1,10 +1,17 @@
 .hero {
 	padding-top: 250px;
 	padding-bottom: 50px;
-	background-image: url(../../img/hero/back.jpg);
+	background-image: url('../img/hero/back.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: 150px;
+
+	@media (max-width: 768px) {
+			margin-bottom: 80px;
+	}
+	@media (max-width: 480px) {
+			margin-bottom: 60px;
+	}
 
 
 	&_title {
@@ -15,6 +22,13 @@
 		color: #fff;
 		padding-bottom: 20px;
 		max-width: 790px;
+
+		@media (max-width: 768px) {
+			font-size: 40px;
+		}
+		@media (max-width: 480px) {
+			font-size: 30px;
+		}
 	}
 
 	&_subtitle {
@@ -23,5 +37,12 @@
 		font-size: 24px;
 		color: #fff;
 		max-width: 560px;
+
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
+		@media (max-width: 480px) {
+			font-size: 12px;
+		}
 	}
 }

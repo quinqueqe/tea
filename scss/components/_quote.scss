@@ -1,5 +1,14 @@
 .quote {
 	padding-bottom: 150px;
+
+	@media (max-width: 768px) {
+		padding-bottom: 80px;
+	}
+
+	@media (max-width: 480px) {
+		padding-bottom: 60px;
+	}
+
 	&_main {
 		display: flex;
 		align-items: center;
@@ -13,6 +22,14 @@
 		font-size: 40px;
 		text-align: center;
 		max-width: 704px;
-	}
+
+		@media (max-width: 768px) {
+			font-size: 30px;
+		}
 	
+		@media (max-width: 480px) {
+			font-size: 20px;
+		}
+	}
+
 }

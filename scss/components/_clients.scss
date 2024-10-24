@@ -9,12 +9,25 @@
 		padding-top: 60px;
 		text-align: center;
 		padding-bottom: 60px;
+
+		@media (max-width: 768px) {
+			padding: 60px 0;
+			font-size: 35px;
+			padding-bottom: 40px;
+		}
 	}
 
 	ul {
 		display: flex;
 		gap: 26px;
 		padding-bottom: 60px;
+		flex-wrap: wrap;
+
+		@media (max-width: 768px) {
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 60px;
+		}
 
 		li {
 			max-width: 280px;
