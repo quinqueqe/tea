@@ -1,0 +1,45 @@
+.prioritise {
+	padding: 150px 0;
+
+	h1 {
+		font-family: var(--second-family);
+		font-weight: 400;
+		font-size: 40px;
+		padding-bottom: 60px;
+		text-align: center;
+
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			h2 {
+				font-family: var(--font-family);
+				font-weight: 300;
+				font-size: 30px;
+				padding-bottom: 10px;
+
+			}
+
+			p {
+				font-family: var(--font-family);
+				font-weight: 600;
+				font-size: 20px;
+				padding-bottom: 40px;
+
+			}
+
+			img {
+
+
+			}
+		}
+	}
+}
